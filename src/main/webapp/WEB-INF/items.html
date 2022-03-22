@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function validate() {
+            let a = document.forms["myForm"]["name"].value;
+            if (a == "") {
+                alert("Укажите ваше имя");
+                return false;
+            }
+            let b = document.forms["myForm"]["second name"].value;
+            if (b == "") {
+                alert("Укажите вашу фамилию");
+                return false;
+            }
+        }
+    </script>
+
+    <div class="center">
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
+    </div>
+    <div>
+        <br>
+        <form name="myForm" method="post" onsubmit="return validate()">
+            <input type="hidden" name="user_id">
+            Name: <input type="text" name="name"><br/>
+            Second Name : <input type="text" name="second name"><br/>
+            Sex :
+            <input type="radio" name="sex">Male
+            <input type="radio" name="sex">Female</br>
+            Description : <br/><textarea name="description"></textarea><br/><br/>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div>
+        <table style="border: 1px solid #000000" border="1" cellpadding="1" cellspacing="0">
+            <tr>
+                <td>Login</td>
+                <td>Email</td>
+            </tr>
+        </table>
+
+    </div>
+
+</head>
+<body>
+
+</body>
+</html>

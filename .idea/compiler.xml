@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="servlet" />
+        <module name="job4j_dreamjob" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="job4j_dreamjob" target="1.5" />
-      <module name="servlet" target="13" />
+      <module name="job4j_dreamjob" target="11" />
+      <module name="servlet" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
